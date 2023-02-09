@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import '../components/Temp.css'
+import '../components/temp.css'
 
 
 
