@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import '../components/Temp.css'
 
 
 
@@ -7,7 +8,7 @@ const Temp = () => {
     const [temp,setTemp] = useState(0);
 
     return ( 
-        <div>
+        <div className='temp'>
             <h1>{temp} </h1>
             <button onClick={() => setTemp(temp+1)}>+</button>
             <button onClick={() => setTemp(temp-1)}>-</button>

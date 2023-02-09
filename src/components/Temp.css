@@ -1,0 +1,13 @@
+.temp{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 400px;
+    background-color: blueviolet;
+
+}
+
+.button{
+    width: 20px;
+    height: 10px;
+}
