@@ -7,9 +7,15 @@ const Temp = () => {
 
     const [temp,setTemp] = useState(0);
 
+    if(temp >10) {
+        const tempBackground = document.getElementsByClassName('temp')
+        console.log(tempBackground)
+
+    }
+
     return ( 
         <div className='temp'>
-            <h1>{temp} </h1>
+            <h1>{temp} C</h1>
             <button onClick={() => setTemp(temp+1)}>+</button>
             <button onClick={() => setTemp(temp-1)}>-</button>
         </div>
