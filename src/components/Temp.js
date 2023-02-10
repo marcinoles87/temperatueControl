@@ -5,13 +5,17 @@ import '../components/temp.css'
 
 const Temp = () => {
 
+    let tempBackground = document.querySelector('.temp')
+
     const [temp,setTemp] = useState(0);
 
     if(temp >10) {
-        const tempBackground = document.getElementsByClassName('temp')
+        
         console.log(tempBackground)
-
+        tempBackground.classList.add('cold')
     }
+
+   
 
     return ( 
         <div className='temp'>
