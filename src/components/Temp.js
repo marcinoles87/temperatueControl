@@ -7,13 +7,19 @@ const Temp = () => {
 
     let tempBackground = document.querySelector('.temp')
 
-    const [temp,setTemp] = useState(0);
+    let [temp,setTemp] = useState(0);
 
     if(temp >10) {
         
         console.log(tempBackground)
-        tempBackground.classList.add('cold')
+        tempBackground.classList.add('hot')
     }
+
+    if(temp > 20) {
+        tempBackground.classList.add('veryHot')
+    }
+
+
 
    
 
