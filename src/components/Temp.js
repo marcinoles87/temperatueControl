@@ -9,14 +9,26 @@ const Temp = () => {
 
     let [temp,setTemp] = useState(0);
 
+    if(temp <5) {
+        tempBackground.classList.add('cold')
+    }
+
     if(temp >10) {
         
-        console.log(tempBackground)
+        tempBackground.classList.remove('cold')
         tempBackground.classList.add('hot')
+
     }
 
     if(temp > 20) {
         tempBackground.classList.add('veryHot')
+        tempBackground.classList.remove('hot')
+    }
+
+    if(temp < 5) {
+        // tempBackground.classList.remove('hot')
+        // tempBackground.classList.remove('veryHot')
+        // tempBackground.classList.add('cold')
     }
 
 
