@@ -10,25 +10,27 @@ const Temp = () => {
     let [temp,setTemp] = useState(0);
 
 
-    if(temp >10) {
-        
-        tempBackground.classList.remove('cold')
-        tempBackground.classList.add('hot')
-
-    }
-
-    if(temp > 20) {
-        tempBackground.classList.add('veryHot')
-        tempBackground.classList.remove('hot')
-    }
+ 
 
     useEffect(() => {
+
+        if(temp >10) {
+        
+            tempBackground.classList.remove('cold')
+            tempBackground.classList.add('hot')
+    
+        }
+    
+        if(temp > 20) {
+            tempBackground.classList.add('veryHot')
+            tempBackground.classList.remove('hot')
+        }
         if(temp < 0) {
             tempBackground.classList.add('cold')
             tempBackground.classList.remove('veryHot')
             tempBackground.classList.remove('hot')
         }
-    })
+    },[temp])
 
 
 
