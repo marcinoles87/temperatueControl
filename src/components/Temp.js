@@ -14,7 +14,7 @@ const Temp = () => {
 
     useEffect(() => {
 
-        if(temp >10) {
+        if(temp >8) {
         
             tempBackground.classList.remove('cold')
             tempBackground.classList.add('hot')
