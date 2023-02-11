@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import '../components/temp.css'
 
 
@@ -22,11 +22,13 @@ const Temp = () => {
         tempBackground.classList.remove('hot')
     }
 
-    if(temp < 5) {
-        // tempBackground.classList.remove('hot')
-        // tempBackground.classList.remove('veryHot')
-        // tempBackground.classList.add('cold')
-    }
+    useEffect(() => {
+        if(temp < 0) {
+            tempBackground.classList.add('cold')
+            tempBackground.classList.remove('veryHot')
+            tempBackground.classList.remove('hot')
+        }
+    })
 
 
 
