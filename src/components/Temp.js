@@ -9,9 +9,6 @@ const Temp = () => {
 
     let [temp,setTemp] = useState(0);
 
-    if(temp <5) {
-        tempBackground.classList.add('cold')
-    }
 
     if(temp >10) {
         
@@ -37,7 +34,7 @@ const Temp = () => {
 
     return ( 
         <div className='temp'>
-            <h1>{temp} C</h1>
+            <h1>{temp} <span>&#176;</span>C</h1>
             <button onClick={() => setTemp(temp+1)}>+</button>
             <button onClick={() => setTemp(temp-1)}>-</button>
         </div>
