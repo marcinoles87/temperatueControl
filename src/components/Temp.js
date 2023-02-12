@@ -9,9 +9,6 @@ const Temp = () => {
 
     let [temp,setTemp] = useState(0);
 
-
- 
-
     useEffect(() => {
 
         if(temp >6) {
