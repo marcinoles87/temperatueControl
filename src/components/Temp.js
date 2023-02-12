@@ -18,8 +18,6 @@ const Temp = () => {
             tempBackground.classList.add('hot')
             tempBackground.classList.remove('cold')
 
-            
-    
         }
     
         if(temp > 20) {
