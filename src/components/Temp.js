@@ -12,9 +12,10 @@ const Temp = () => {
 
     useEffect(() => {
 
-        if(temp >6) {
+        if(temp >6 && temp <20) {
             tempBackground.classList.add('hot')
             tempBackground.classList.remove('cold')
+            tempBackground.classList.remove('veryHot')
             text.textContent = "lekka kurtka + czapka"
 
         }
